@@ -1,0 +1,49 @@
+/* Home.css */
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.area-dropdown {
+  margin: 20px 0;
+}
+
+.area-dropdown label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.area-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.meal-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.meal-card:hover {
+  transform: scale(1.05);
+}
+
+.meal-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
