@@ -1,0 +1,98 @@
+/* Contact.css */
+.contact {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4e1; /* Soft kitchen-inspired cream color */
+    padding: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact h1 {
+    font-size: 2rem;
+    color: #ff5722; /* Deep orange, warm like spices */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #3e3e3e; /* Dark grey for text */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #d4d4d4;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ff5722; /* Highlight border with the same deep orange */
+    outline: none;
+  }
+  
+  .form-group textarea {
+    min-height: 160px;
+  }
+  
+  button {
+    padding: 14px 25px;
+    font-size: 1rem;
+    background-color: #ff7043; /* A lighter orange for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5722; /* Darker orange when hovered */
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .contact {
+      padding: 20px;
+    }
+  
+    .contact h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      padding: 12px 20px;
+    }
+  }
+  

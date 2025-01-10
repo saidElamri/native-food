@@ -1,4 +1,3 @@
-// Home.jsx
 import React, { useState } from 'react';
 import { getMealsByArea } from '../api';
 import { Link } from 'react-router-dom';
@@ -10,35 +9,12 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Supported regions
   const regions = [
-    'American',
-    'British',
-    'Canadian',
-    'Chinese',
-    'Croatian',
-    'Dutch',
-    'Egyptian',
-    'Filipino',
-    'French',
-    'Greek',
-    'Indian',
-    'Irish',
-    'Italian',
-    'Jamaican',
-    'Japanese',
-    'Kenyan',
-    'Malaysian',
-    'Mexican',
-    'Moroccan',
-    'Polish',
-    'Portuguese',
-    'Russian',
-    'Spanish',
-    'Thai',
-    'Tunisian',
-    'Turkish',
-    'Vietnamese',
+    'American', 'British', 'Canadian', 'Chinese', 'Croatian', 'Dutch', 
+    'Egyptian', 'Filipino', 'French', 'Greek', 'Indian', 'Irish', 
+    'Italian', 'Jamaican', 'Japanese', 'Kenyan', 'Malaysian', 
+    'Mexican', 'Moroccan', 'Polish', 'Portuguese', 'Russian', 
+    'Spanish', 'Thai', 'Tunisian', 'Turkish', 'Vietnamese',
   ];
 
   const handleAreaChange = async (e) => {
@@ -75,7 +51,7 @@ const Home = () => {
       <h1>Food Explorer</h1>
 
       <div className="area-dropdown">
-        <label htmlFor="area">Select a Region or Country: </label>
+        <label htmlFor="area">Select a Region or Country:</label>
         <select id="area" value={area} onChange={handleAreaChange}>
           <option value="">Select a Region</option>
           {regions.map((region, index) => (
@@ -89,6 +65,12 @@ const Home = () => {
       {loading && <p>Loading meals...</p>}
       {error && <p className="error">{error}</p>}
 
+      {!area && !loading && (
+        <div className="placeholder">
+          <p>🍴 Explore delicious meals by selecting a region above!</p>
+        </div>
+      )}
+
       <div className="meals-list">
         {meals.length > 0 ? (
           meals.map((meal) => (
@@ -99,7 +81,7 @@ const Home = () => {
             </div>
           ))
         ) : (
-          <p>No meals found for the selected area.</p>
+          area && <p>No meals found for the selected area.</p>
         )}
       </div>
     </div>

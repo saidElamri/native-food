@@ -1,0 +1,98 @@
+.about-page {
+    background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page h1 {
+    text-align: center;
+    color: #1abc9c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .about-page h2 {
+    color: #34495e;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .about-page p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-page ul,
+  .about-page ol {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-page li {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+  }
+  
+  .about-page strong {
+    color: #1abc9c;
+  }
+  
+  .about-page ul li::marker {
+    color: #1abc9c;
+    font-size: 1.2rem;
+  }
+  
+  .about-page ol li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .about-page ol li::before {
+    content: counter(item) '.';
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1abc9c;
+  }
+  
+  .about-page .cta {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #16a085;
+    background: #1abc9c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .about-page .cta:hover {
+    background: #148f77;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .about-page h1 span {
+    color: #34495e;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 0.5rem;
+  }
+  
