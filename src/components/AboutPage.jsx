@@ -8,10 +8,10 @@ const AboutPage = () => {
         About Us <span>Discover a world of flavors</span>
       </h1>
       <p>
-        Welcome to <strong>[App Name]</strong> – your passport to the world’s most delicious flavors! 🌍🍴
+        Welcome to <strong>FOOD EXPLORER</strong> – your passport to the world’s most delicious flavors! 🌍🍴
       </p>
       <p>
-        We believe that every city and country has a unique story to tell through its food. At <strong>[App Name]</strong>, we aim to bring these stories to life by helping you discover the best native dishes, authentic recipes, and top-rated restaurants wherever you are.
+        We believe that every city and country has a unique story to tell through its food. At <strong>FOOD EXPLORER</strong>, we aim to bring these stories to life by helping you discover the best native dishes, authentic recipes, and top-rated restaurants wherever you are.
       </p>
 
       <h2>What We Offer</h2>
@@ -32,7 +32,7 @@ const AboutPage = () => {
 
       <h2>Our Mission</h2>
       <p>
-        At <strong>[App Name]</strong>, we aim to connect people through the universal language of food. By celebrating local cuisines and cultures, we hope to inspire a deeper appreciation for the world’s diverse culinary traditions.
+        At <strong>FOOD EXPLORER</strong>, we aim to connect people through the universal language of food. By celebrating local cuisines and cultures, we hope to inspire a deeper appreciation for the world’s diverse culinary traditions.
       </p>
 
       <h2>How It Works</h2>
